@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decentralized File Manager Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h1>DecentraVault</h1>
+    </div>                                       
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search files...">
+      <button id="search-btn">Search</button>
+    </div>
+    <div class="logout">
+        <a href="profile.html"><img src="profile.jpg" alt="Profile" id="profile-icon"></a>
+        <button id="logout-btn"  href="logout.html">Logout</button>
+        
+      </div>
+      
+    
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Sidebar for Folders -->
+    <nav class="sidebar">
+      <ul>
+        <li class="folder active">Folder 1</li>
+        
+        <li class="folder new-folder">+ Create New Folder</li>
+      </ul>
+    </nav>
+
+    <!-- Dashboard Area -->
+    <main class="dashboard">
+      <!-- File Upload Section -->
+      <section class="file-upload">
+        <h2>Upload a File</h2>
+        <input type="text" id="custom-file-name" placeholder="Enter file name">
+        <button id="upload-btn">Upload File</button>
+      </section>
+
+      <!-- Files Listing Section -->
+      <section class="files-list">
+        <h2>Your Files</h2>
+        <div class="files-grid">
+          <!-- Example File Item -->
+          <div class="file-item">
+            <img src= "file-icon.jpg" alt="File Icon">
+            <p class="file-name">ExampleFile.txt</p>
+          </div>
+          <!-- Additional file items will be dynamically inserted here -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  
+
+
+<script>
+  document.getElementById("logout-btn").addEventListener("click", function() {
+      window.location.href = "logout.html"; // Redirect to logout page
+  });
+</script>
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>

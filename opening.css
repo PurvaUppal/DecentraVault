@@ -1,0 +1,122 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Opening page container covering full viewport */
+  .opening-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Awesome background gradient */
+    background: linear-gradient(135deg, #4a90e2 0%, #a1c4fd 100%);
+    padding: 20px;
+  }
+  
+  /* Header styling for project name */
+  .opening-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .opening-header h1 {
+    font-size: 4rem;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  
+  /* Hero Section styling */
+  .hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+  }
+  
+  /* Hero Text styling */
+  .hero-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .hero-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* Get Started Button */
+  .btn-get-started {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4a90e2;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-get-started:hover {
+    background-color: #357ab8;
+  }
+  
+  /* Hero Insights styling */
+  .hero-insights {
+    flex: 1;
+    padding: 20px;
+    border-left: 2px solid #eee;
+  }
+  
+  .hero-insights h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .hero-insights ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .hero-insights ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+    }
+    .hero-insights {
+      border-left: none;
+      border-top: 2px solid #eee;
+      margin-top: 20px;
+      padding-top: 20px;
+    }
+  }
+  

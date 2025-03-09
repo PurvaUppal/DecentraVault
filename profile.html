@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Profile - FileHive</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <!-- Header with a back button -->
+  <header class="header">
+    <div class="logo">
+      <h1>DecentraVault</h1>
+    </div>
+    <div class="profile">
+      <!-- Back to Dashboard button -->
+      <a href="index.html"><button id="back-btn">Dashboard</button></a>
+    </div>
+  </header>
+
+  <!-- Profile Details Container -->
+  <main class="profile-container">
+    <h2>Your Profile</h2>
+    <div class="profile-info">
+      <p><strong>Name:</strong> </p>
+      <p><strong>Email:</strong> </p>
+      <p><strong>Password:</strong> </p>
+      <p><strong>Total Files Stored:</strong></p>
+    </div>
+  </main>
+
+  <script>
+    // Example: In a real application, these details would be fetched from your backend or blockchain.
+    // For demonstration, we populate the fields with sample data.
+    document.getElementById('profile-name').innerText = "Alice Johnson";
+    document.getElementById('profile-email').innerText = "alice@example.com";
+    document.getElementById('profile-password').innerText = "********"; // Do not display the actual password in production!
+    document.getElementById('profile-files-count').innerText = "10";
+  </script>
+  <script src="main.js"></script>
+
+</body>
+</html>

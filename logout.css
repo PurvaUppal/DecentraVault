@@ -1,0 +1,90 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Full-Screen Background with a Gradient */
+  body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Logout Container */
+  .logout-container {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  /* Header Styling */
+  .logout-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Main Content Styling */
+  .logout-main h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .logout-main p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Login Again Button */
+  .btn-login-again {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #667eea;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-login-again:hover {
+    background-color: #556cd6;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 480px) {
+    .logout-container {
+      margin: 20px;
+      padding: 30px 15px;
+    }
+    
+    .logout-header h1 {
+      font-size: 2rem;
+    }
+    
+    .logout-main h2 {
+      font-size: 1.5rem;
+    }
+    
+    .btn-login-again {
+      font-size: 1rem;
+      padding: 12px 25px;
+    }
+  }
+  
